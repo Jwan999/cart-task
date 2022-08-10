@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<div id="app">
+
+    <button @click="activeTab = '1'">Tab 1</button>
+    <button @click="activeTab = '2'">Tab 2</button>
+
+    <p v-if="activeTab == '1'">Tab 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet aspernatur atque consequatur eaque
+        eligendi esse hic ipsam nulla obcaecati, perferendis qui soluta suscipit tempora tenetur! Distinctio illum
+        minima rem.</p>
+    <p v-if="activeTab == '2'">Tab 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet asperiores assumenda harum libero, magnam
+        maiores omnis optio provident qui, saepe tempore vitae voluptatem. Aliquid autem ducimus hic inventore natus
+        soluta.</p>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.js"></script>
+<script>
+    let vue = new Vue({
+        el: '#app',
+        data: {
+            activeTab: '1',
+        },
+        methods: {}
+    })
+</script>
+</body>
+</html>

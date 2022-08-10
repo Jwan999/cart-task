@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+
+<script>
+
+    let employee = {
+        name: 'sara',
+        age: 0,
+        attendance: true,
+        hobbies: ['swimming', 'reading', 'writing']
+    }
+    employee.hobbies.push('drawing')
+
+
+    // if (employee.age >= 20) {
+    //     console.log('give raise')
+    // } else if (employee.age < 20 && employee.age > 0) {
+    //     console.log('an intern not employee')
+    // } else {
+    //     console.log("you don't exist")
+    // }
+
+
+    // for (let i = 0; i < employee.hobbies.length; i++) {
+    //     console.log(employee.hobbies[i])
+    // }
+    //
+    // for (let hobby of employee.hobbies) {
+    //     console.log(hobby)
+    // }
+    //
+    // let i = 0
+    // while (i < employee.hobbies.length) {
+    //     console.log(employee.hobbies[i])
+    //
+    //     i++
+    // }
+
+
+    // 0-100
+    // 3 fizz
+    // 5 buzz
+    // 3 5 fizzbuzz
+
+    // for (let i = 0; i <= 100; i++) {
+    //     if (i % 3 == 0 && i % 5 == 0) {
+    //         console.log('FIZZBUZZ')
+    //     } else if (i % 5 == 0) {
+    //         console.log('BUZZ')
+    //     } else if (i % 3 == 0) {
+    //         console.log('FIZZ')
+    //     } else {
+    //         console.log(i)
+    //     }
+    // }
+
+    // ternary operator
+
+    // let gender = 'male'
+    //
+    // gender == 'female' ? console.log("i'm a girl") : console.log("i'm a boy")
+
+
+    let tasks = [
+        {
+            title: 'Build HTML page',
+            isCompleted: false,
+        },
+        {
+            title: 'Use tailwindcss',
+            isCompleted: false,
+        },
+        {
+            title: 'Add JavaScript',
+            isCompleted: true,
+        }
+    ]
+
+    // filteredTasks = tasks.find(task => task.isCompleted)
+    //
+    // console.log(filteredTasks)
+    let result = addNumbers(15, 7)
+
+    function addNumbers(a, b) {
+        return a + b
+    }
+
+    console.log(result)
+
+</script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /*h1 {*/
+        /*    color: red;*/
+        /*}*/
+
+        /*.text-red {*/
+        /*    color: red;*/
+        /*}*/
+
+        /*#greeting {*/
+        /*    color: red;*/
+
+        /*}*/
+    </style>
+</head>
+<body>
+
+<h1>Hello</h1>
+<h1>Hello</h1>
+
+<!--<input class="nameField" type="text" value="sara">-->
+<!--<button>Submit</button>-->
+
+
+<script>
+    let greeting = window.document.querySelectorAll('h1')
+
+    for (i = 0; i < greeting.length; i++) {
+        console.log(greeting[i].style.color = 'red')
+    }
+
+    // let button = window.document.querySelector('button')
+    // let input = window.document.querySelector('.nameField')
+    // greeting.style.backgroundColor = 'red'
+    // console.log(greeting)
+</script>
+</body>
+</html>

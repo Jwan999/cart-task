@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<div id="app">
+    <input placeholder="Add fruit" type="text" v-model="fruitName">
+    <button @click="addToFruits()">Submit</button>
+
+    <h1>The whole array</h1>
+    <h2>{{fruits}}</h2>
+    <!--    <input placeholder="Enter your name" type="text" v-model="student.name">-->
+    <!--    <input placeholder="Enter your phone number" type="number" v-model="student.phone">-->
+    <!--    <input placeholder="Enter your email" type="email" v-model="student.email">-->
+
+    <h1>The array with v-for</h1>
+
+    <h2 style="color:blue" v-for="fruit in fruits">
+        {{fruit}}
+    </h2>
+    <!--    <h1>Name: {{card.name}}</h1>-->
+    <!--    <h1>Phone: {{card.phone}}</h1>-->
+    <!--    <h1>Email: {{card.email}}</h1>-->
+    <!--    <h1>{{description}}</h1>-->
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.js"></script>
+
+<script>
+    let app = new Vue({
+        el: '#app',
+        data: {
+            fruitName: '',
+            fruits: [],
+            // student: {
+            //     name: '',
+            //     phone: null,
+            //     email: '',
+            // },
+            // card: {
+            //     name: '',
+            //     phone: '',
+            //     email: ''
+            // }
+        },
+        methods: {
+            addToFruits() {
+                this.fruits.push(this.fruitName)
+            },
+            getStudentInfo() {
+                // console.log('hello from the button')
+                // this.card.name = this.student.name
+                // this.card.phone = this.student.phone
+                // this.card.email = this.student.email
+            }
+
+        }
+    })
+</script>
+
+
+</body>
+</html>
